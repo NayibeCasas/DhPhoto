@@ -1,0 +1,39 @@
+.galerias{
+    width: 100%;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.galerias h1{
+    margin-bottom: 2%;
+    width: 100%;
+    color:#282A5B;
+    text-align: center;
+}
+.galerias p{
+    width: 100%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+.g_imagenes{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.g_imagenes div{
+    width: 80%;
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.g_imagenes img{
+    width: 28%;
+    height: 40%;
+    margin-left: 3%;
+    margin-bottom: 3%;
+    cursor: pointer;
+}

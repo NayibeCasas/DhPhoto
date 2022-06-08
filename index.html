@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>DH PHOTO</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/3d.css">
+    <link rel="stylesheet" href="./CSS/fotografia.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/242df0cab7.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="./imagenes/logo.png" sizes="32x32">
+</head>
+<body>
+    <header class="header" id="header" > 
+        <nav class="header_nav">
+
+            <ul class="header_ul">
+
+                <li class=" header_ul--li"><a href="#main_quiensoy">QUIEN SOY</a></li>
+                <li class=" header_ul--li"><a href="#myBtnContainer">GALERIA</a></li>
+                <li class=" header_ul--li"><a href="#footer">CONTACTO</a></li>
+            </ul> 
+        </nav>
+    </header>
+    <img class="header_img" src="./imagenes/letrero.png" alt="">
+    <main class="main">
+        <img class="superior" src="./imagenes/Recurso 3.png" alt="">
+        <div class="main_quiensoy" id="main_quiensoy">
+            <div class="main_quiensoy_contenido">
+                
+                <div class="imagen" id="animation">
+                    <img src="./imagenes/foto.png" alt="">
+                </div>
+                <div class="descripcion">
+                    <h1>
+                        BIENVENIDOS
+                    </h1>
+                    <p>Quiero darles la bienvenida a este portal web; el cual esta desarrollado con el obejtivo de transmitir los procesos por los cuales he venido elaborando a lo largo de mi carrrera como diseñador gráfico.</p>
+                    <img src="./imagenes/Recurso 1.png" alt="">
+                </div>
+            </div>
+            <img class="inferior" src="./imagenes/Recurso 4.png" alt="">
+        </div>
+        <div class="main_galeria" id="myBtnContainer">
+            <div class="main_galeria_uno btn active" id="uno" onclick="filterSelection('uno')">
+
+                <iframe  class="cambiar" src="./galeria/fotografia.html" frameborder="0" scrolling="no"></iframe>
+                <div >
+                    <h1 >Fotografia</h1>
+                </div>
+            </div>
+            <div class="main_galeria_uno tres btn" id="dos" onclick="filterSelection('dos')">
+
+                <iframe  class="cambiar" src="./galeria/publicidad.html" frameborder="0" scrolling="no"></iframe>
+                <div>
+                    <h1>Imagen Corporativa</h1>
+                </div>
+            </div>
+            <div class="main_galeria_uno tres btn" id="tres" onclick="filterSelection('tres')">
+
+                <iframe  class="cambiar" src="./galeria/3d.html" frameborder="0" scrolling="no"></iframe>
+                <div>
+                    <h1 >3D</h1>
+                </div>
+            </div>
+            <div class="main_galeria_uno tres btn" id="cuatro" onclick="filterSelection('cuatro')">
+
+                <iframe  class="cambiar" src="./galeria/diseños.html" frameborder="0" scrolling="no"></iframe>
+                <div>
+                    <h1>Diseños</h1>
+                </div>
+            </div>
+        </div>
+        <div class="galerias_img" id="cuadro">
+            <section class="galerias column dos" id="cuadro" >   
+                <i class="fas fa-caret-down" id="triangulo" style="margin-left: 35.5%;"></i>
+                <h1>Imagen Corporativa</h1>
+                <p>La siguiente galeria, hace referencia a la  publicidad, donde se  podra observar el desarollo de material pop utilizando la marca o logotipo en diferentes productos.</p>
+                <section class="g_imagenes">
+                    <div>
+                        <img src="./imagenes/publicidad/1.jpg"  onclick="cambiarImagenJS('./imagenes/publicidad/1.jpg','Camisa')" alt="Camisa">
+                        <img src="./imagenes/publicidad/2.jpg"  onclick="cambiarImagenJS('./imagenes/publicidad/2.jpg','Gorra')" alt="Gorra">
+                        <img src="./imagenes/publicidad/3.png"  onclick="cambiarImagenJS('./imagenes/publicidad/3.png','Tarjeta de Presentación')" alt="Tarjeta de Presentación ">
+                        <img src="./imagenes/publicidad/4.jpg"  onclick="cambiarImagenJS('./imagenes/publicidad/4.jpg','Papeleria')" alt="Papeleria">
+                        <img src="./imagenes/publicidad/5.png"  onclick="cambiarImagenJS('./imagenes/publicidad/5.png','Vista en Red Social')" alt="Vista en Red Social">
+                        <img src="./imagenes/publicidad/6.jpg"  onclick="cambiarImagenJS('./imagenes/publicidad/6.jpg','Pocillo')" alt="Pocillo">
+        
+                    </div>
+                </section>
+            </section>
+            <section class="galerias1 column uno" id="cuadro" >  
+                <i class="fas fa-caret-down" id="triangulo" style="margin-left: 11%;"></i> 
+                <h1>Fotografia</h1>
+                <p>Iniciamos con la galeria de  fotografia, donde se observa una serie de montajes publicitarios con diferentes productos; señalando la publicidad como tal.</p>
+                <section class="g_imagenes1">
+                    <div>
+                        <img src="./imagenes/fotografia/1.jpg" onclick="cambiarImagenJS('./imagenes/fotografia/1.jpg','Portada Catálogo')" alt="">
+                        <img src="./imagenes/fotografia/2.jpg" onclick="cambiarImagenJS('./imagenes/fotografia/2.jpg','Pagina Catálogo')" alt="">
+                        <img src="./imagenes/fotografia/3.jpg" onclick="cambiarImagenJS('./imagenes/fotografia/3.jpg','Montaje Cerveza')" alt="">
+                        <img  src="./imagenes/fotografia/4.jpg" onclick="cambiarImagenJS('./imagenes/fotografia/4.jpg','Montaje Cerveza')" alt="">
+                        <img style="height: 60%;width:35%; margin-left: 15%;" src="./imagenes/fotografia/5.jpeg,'Montaje Helado')" onclick="cambiarImagenJS('./imagenes/fotografia/5.jpeg')" alt="">
+                        <img style="height: 35%; width:35%;" src="./imagenes/fotografia/6.jpeg" onclick="cambiarImagenJS('./imagenes/fotografia/6.jpeg','Montaje Chocolate')" alt="">
+
+                    
+                    </div>
+                </section>
+            </section>
+            <section class="galerias column cuatro" id="cuadro"  >   
+                <i class="fas fa-caret-down" id="triangulo" style="margin-left: 85.5%;"></i>
+                <h1>Diseños</h1>
+                <p>Por ultimo,Esta galería, tiene como objetivo,  resaltar diseños que se han desarrollado en la materia de historia y teoría del diseño. <br>  Componiendo diferentes piezas relacionadas con el programa como tal.</p>
+                <section class="g_imagenes">
+                    <div>
+                        <img src="./imagenes/diseños/1.jpg" onclick="cambiarImagenJS('./imagenes/diseños/1.jpg','Tapabocas Humorístico')" alt="">
+                        <img src="./imagenes/diseños/2.jpg" onclick="cambiarImagenJS('./imagenes/diseños/2.jpg' ,'Tapabocas Extravgante')" alt="">
+                        <img src="./imagenes/diseños/3.jpg" onclick="cambiarImagenJS('./imagenes/diseños/3.jpg', 'Tapabocas Fantasia')" alt="">
+                        <img src="./imagenes/diseños/4.jpg" onclick="cambiarImagenJS('./imagenes/diseños/4.jpg','Camisa arte-diseño-artesania') " alt="">
+                        <img src="./imagenes/diseños/5.png" onclick="cambiarImagenJS('./imagenes/diseños/5.png','Pendones Diseñadores') " alt="">
+                        <img src="./imagenes/diseños/6.jpg" onclick="cambiarImagenJS('./imagenes/diseños/6.jpg','Portada Walter Gropiius') " alt="">
+                    </div>
+                </section>
+            </section>
+            <section class="galerias column tres" id="cuadro" >   
+                <i class="fas fa-caret-down" id="triangulo" style="margin-left: 61%;"></i>
+                <h1>3D</h1>
+                <p>En tercer lugar tenemos los trabajos realizadose 3D, los cuales fueron desarollados de la manera mas compleja y detallada.</p>
+                <section class="g_imagenes">
+                    <div>
+                        <img src="./imagenes/3d/1.jpg" onclick="cambiarImagenJS('./imagenes/3d/1.jpg','Tablero Ajedrez' )" alt="">
+                        <img src="./imagenes/3d/2.jpg" onclick="cambiarImagenJS('./imagenes/3d/2.jpg','Memoria Usb') " alt="">
+                        <img src="./imagenes/3d/3.jpg" onclick="cambiarImagenJS('./imagenes/3d/3.jpg','Templo de Géminis' )" alt="">
+                        <img src="./imagenes/3d/4.jpg" onclick="cambiarImagenJS('./imagenes/3d/4.jpg','Pedazo de Torta' )" alt="">
+                        <img src="./imagenes/3d/5.jpg" onclick="cambiarImagenJS('./imagenes/3d/5.jpg','Sala Comedor' )" alt="">
+                        <img src="./imagenes/3d/6.jpg" onclick="cambiarImagenJS('./imagenes/3d/6.jpg','Stand de Spotify') " alt="">
+                    </div>
+                </section>
+            </section>
+        </div>
+        <!-- The Modal -->
+            <div id="myModal" class="modal">
+            
+        <!-- The Close Button -->
+            <span class="close">&times;</span>
+            
+            <!-- Modal Content (The Image) -->
+            <img  id="f" class="modal-content" src="" alt="">
+            
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+            </div>
+
+        <section class="footer" id="footer">
+            <img class="superior" src="./imagenes/Recurso 3.png" alt="">
+            <div>
+                <div class="footer_logo">
+                    <img src="./imagenes/logo.png" alt="">
+                </div>
+                <div  class="footer_contenido">
+                    <div class="derecha">
+                        <figure>
+                            <figcaption>INSTAGRAM</figcaption>
+                            <div>
+                                <img src="./imagenes/imagen.jpg" alt="">
+                                <img src="./imagenes/imagen 2.jpg" alt="">
+                                <img src="./imagenes/imagen 3.jpg" alt="">
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="centro">
+                        <p>REDES SOCIALES</p>
+                        <div>
+                            <img src="./imagenes/Recurso 5.png" alt="">
+                            <img src="./imagenes/Recurso 7.png" alt="">
+                            <img src="./imagenes/Recurso 6.png" alt="">
+                            <img src="./imagenes/Recurso 8.png" alt="">
+                        </div>
+                    </div>
+                    <div class="izquierda">
+                        <h1>CONTACTANOS</h1>
+                        <figure>
+                            <figcaption>Bogotá / Kra 88 #6A-90</figcaption>
+                            <i class="fas fa-map-marker-alt i"></i>
+                        </figure>
+                        <figure>
+                            <figcaption>dhphoto@gmail.com</figcaption>
+                            <i class="fas fa-envelope i"></i>
+                        </figure>
+                        <figure>
+                            <figcaption>www.dhphoto.com</figcaption>
+                            <i class="fas fa-globe i"></i>
+                        </figure>
+                        <figure>
+                            <figcaption>319 375 3246</figcaption>
+                            <i class="fas fa-phone-alt i"></i>
+                        </figure>
+                    </div>
+                </div>
+                <div class="footer_final">
+                    <p>DH PHOTO: PORTAL WEB</p>
+                    <li class=" "><a href="#header">HOME</a></li>
+                </div>
+            </div>
+            <img class="" src="./imagenes/Recurso 4.png" alt=""  style="margin-top: -1%;">
+        </section>
+
+    </main>
+    
+    <script>
+        /*intercambio de galerias*/
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("column");
+            console.log(x);
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+            console.log(x[i]);
+
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+        
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+            }
+        }
+        
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                }
+        }
+        element.className = arr1.join(" ");
+        }
+        
+        
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+            });
+        }
+        let uno= document.getElementById("uno");
+        let dos= document.getElementById("dos");
+        let tres= document.getElementById("tres");
+        let cuatro= document.getElementById("cuatro");
+        let portafolio = document.getElementById("cuadro");
+        uno.addEventListener("click",function(e){
+        e.preventDefault();
+        portafolio.style.height="150vh";
+
+        })
+        dos.addEventListener("click",function(e){
+        e.preventDefault();
+        portafolio.style.height="105vh";
+
+        })
+        tres.addEventListener("click",function(e){
+        e.preventDefault();
+        portafolio.style.height="105vh";
+
+        })
+        cuatro.addEventListener("click",function(e){
+        e.preventDefault();
+        portafolio.style.height="110vh";
+
+        })
+        /*ampliar*/
+                // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("click");
+        var captionText = document.getElementById("caption");
+        function cambiarImagenJS(a,b){
+            document.getElementById("f").src=a;
+            captionText.innerHTML =b;
+
+                        console.log(a);
+                        console.log("hola");
+                        console.log(b);
+
+                        
+        modal.style.display = "block";
+
+        }
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+}
+        /*imagen*/
+        window.addEventListener('scroll',function(){
+            let animation=document.getElementById("animation");
+            let posicion=animation.getBoundingClientRect().top;
+            console.log(posicion)
+            let tamaño=window.innerHeight;
+            if(posicion<tamaño){
+                animation.style.animation="mover2 1s ease-out"
+            }
+            if(posicion>tamaño){
+                animation.style.animation="mover2 1s ease-out"
+            }
+        })
+        </script>
+</body>
+</html>

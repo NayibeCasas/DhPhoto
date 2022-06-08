@@ -1,0 +1,465 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+
+
+}
+
+/********************Menu***************/
+.column{
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
+#cuadro{
+    height: 0vh;
+    
+}
+.galerias_img{
+    height: 0vh;
+}
+.show{
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+.btn.active {
+}
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+
+}
+.header_img{
+    width: 100%;
+    height: 100vh;
+}
+
+.header_nav{
+    width: 100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header_ul{
+    list-style: none;/*estilo de la lista para quitar los punos*/
+    display: column;
+    height: 100%;
+    width: 60%;
+    text-align: center;
+}
+.header_ul--li{
+    margin-top: 15%;
+    margin-bottom: 10%;
+    margin-left: 70%;
+    width: 150px;
+    background-color: #282A5B;
+    border-radius: 5px;
+}
+
+/*ser especifco en css*/
+.header_ul--li a{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    padding: 5px;
+    text-decoration: none;
+    width: 150px;
+}
+.header_ul:focus{
+    background-color:#fff ;
+    color: #282A5B;
+    border-radius: 5px;
+}
+.header_ul a:focus{
+    color: #282A5B;
+}
+.header_ul a:hover{
+    color: #282A5B;
+}
+.header_ul--li:hover{
+    background-color:#fff ;
+    color: #282A5B;
+    border-radius: 5px;
+}
+
+
+.main_quiensoy{
+    width: 100%;
+    height: 100vh;
+    background: #cdcdcd;  /* fallback for old browsers */rgb(40,42,91,.5), #cdcdcd, #cdcdcd);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #282A5B,rgb(40,42,91,.5), rgb(40,42,91,.5), #cdcdcd, #cdcdcd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main_quiensoy_contenido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    width: 100%;
+    background-color:#cdcdcd;
+}
+.imagen{
+    height: 140%;
+    width: 35%;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 13.2%;
+
+}
+.imagen img{
+    width: 100%;
+    height:90%;
+}
+.descripcion h1{
+    color:#282A5B;
+    font-family: 'Acme', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+.descripcion h1:hover{
+    background-color:#282A5B;
+    color: #fff;
+}
+.descripcion{
+    height: 60%;
+    width:30%;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10%;
+}
+.superior{
+    margin-left: 90%;
+    position: absolute;
+    margin-top: -4%;
+}
+.inferior{
+    margin-top: 15.5%;
+    margin-left: 5%;
+}
+.descripcion img{
+    margin-top: 25%;
+}
+.descripcion h1{
+    margin-bottom: 5%;
+}
+.main_quiensoy_contenido p{
+    margin-top: 2%;
+    font-size: 22px;
+    text-align: justify;
+    font-family: 'Acme', sans-serif;
+
+
+}
+.main_galeria{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.main_galeria_uno{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.cambiar{
+    margin-top: 5%;
+    width: 90%;
+    height: 90%;
+    position: relative;
+    z-index: -1;
+}
+/*.main_galeria_uno:hover{
+    background-color: aqua;
+}*/
+.main_galeria_uno div{
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -7%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+
+}
+#triangulo{
+    font-size: 80px;
+    margin-top: -9%;
+    color:  #282A5B;
+}
+.main_galeria_uno h1{
+    width: 80%;
+    background-color: #282A5B;
+    color: white;
+}
+.main_galeria_uno h1:hover{
+    color: #282A5B;
+    background-color: white;
+}
+.main_galeria_titulo{
+    position: absolute;
+    width: 100%;
+    height: 8vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main_galeria_titulo h1{
+    width: 30%;
+    height: 100%;
+    border:2px solid black; 
+    cursor: pointer;
+}
+.main_galeria_titulo h1:hover{
+    background-color:#282A5B;
+    color: #fff;
+}
+iframe{
+    width: 0;
+    height: 0;
+}
+.footer{
+    width: 100%;
+    height: 90vh;
+    background-color: #4C59A1;
+
+}
+.footer_contenido{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer_logo{
+    width: 100%;
+    height: 20%;
+    background: #4C59A1;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4C59A1,#4C59A1, #cdcdcd);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4C59A1,#4C59A1, #cdcdcd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 0%;
+
+}
+.footer_logo img{
+    width: 10%;
+    height: 10%;
+}
+.derecha{
+    width: 33.3%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2%;
+}
+.derecha img{
+    width:32%;
+    height: 20%;
+    
+}
+.derecha figcaption{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+.centro{
+    width: 33.3%;
+    height: 50vh;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 700;
+}
+.centro p{
+    margin-top: 27%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.centro div{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+.centro img{
+    width: 15%;
+    height:15%;
+    margin-left: 4%;
+    
+}
+.izquierda
+    {
+        width: 33.3%;
+        height: 50vh;
+    }
+.izquierda h1{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin-top: 26%;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.izquierda figure{
+    width: 100%;
+    display: flex;
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin-bottom: 4%;
+}
+.i{
+    text-align: right;
+    margin-left: 2%;
+    width: 10%;
+}
+.izquierda figcaption{
+    width: 90%;
+}
+.footer_final{
+    width: 100%;
+    align-items: center;
+}
+.footer_final {
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 700;
+
+}
+.footer_final li{
+    width: 100%;
+    text-align: center;
+}
+.footer_final p{
+    width: 100%;
+    text-align: center;
+}
+.footer_final a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 700;
+}
+
+/**/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+  /* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 500px;
+}
+
+  /* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+  /* Add Animation */
+.modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+  /* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+  /* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+    width: 100%;
+    }
+}
+@keyframes mover {
+    80%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    1%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
+@keyframes mover2 {
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
